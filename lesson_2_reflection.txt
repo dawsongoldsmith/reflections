@@ -1,18 +1,45 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+It creates a folder which will then be able to save all files in one commit
+so  that they are linked together and easier to view.
+
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+
+The working directory is the main place where the information before commits is
+stored, while the repository is where the commits will go once they have been
+committed, but the staging area is the path between the repository and working
+directory
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+You only add one commit/file per staging area which will mean that you don't
+accidentally commit 2 different things at once, it is a middle "holding area"
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Multiple branches are helpful in situations when you want 2 different versions
+of code. If someone wanted to create an experimental feature or an easy mode
+or a hard mode, different branches would keep the changes isolated and
+so if the code is one changed the other can remain untouched.
+
 How do the diagrams help you visualize the branch structure?
+
+Diagrams help us understand how commits are connected to each other as well as
+branches. Diagrams allow us to see which commits are available for checkout and
+which ones are completely separate.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+It syncs the code from 2 separate branches and turns it into one single commit.
+Git merge also merges the git logs of both the branches into one log.
+
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Auto merging can be much faster while manual merges ensure that if there are
+commit conflicts, they will be resolved as intended. Automatic merging; however,
+could lead to a jumble of code that makes no sense together.
